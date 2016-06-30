@@ -1,13 +1,13 @@
 {
-  "name": "node-server",
-  "version": "1.0.0",
+  "name": "@yzt/node-server",
+  "version": "1.6.0",
   "description": "create a simple server in you PC",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "node-server": "node app"
+    "node-server": "app.js"
   },
   "repository": {
     "type": "git",

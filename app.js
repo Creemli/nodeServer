@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * Created by lixiaoxi on 15/8/25.
  * @description
