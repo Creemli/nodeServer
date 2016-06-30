@@ -11,6 +11,7 @@ var http = require('http');
 var url = require('url');
 var fs = require('fs');
 var path = require('path');
+var ip = require('ip');
 var MIME = {
     'htm':  'text/html',
     'html': 'text/html',
@@ -93,7 +94,6 @@ http.createServer(function(request, response) {
     if (extname && MIME[extname]) {
         contentType = MIME[extname];
     }
-
     // 判断文件是否存在
     fs.exists(realpath, function(exists) {
         if (exists) {
@@ -162,7 +162,6 @@ http.createServer(function(request, response) {
         o.content && response.write(o.content);
         response.end();
     }
-}).listen(PORT);
+}).listen(PORT, ip.address());
 
-console.log('static file server runing at port: ' + PORT + '.');
-
+console.log('static file server runing at: http://' + ip.address() +':'+ PORT);
