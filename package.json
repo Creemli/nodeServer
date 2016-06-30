@@ -1,0 +1,30 @@
+{
+  "name": "node-server",
+  "version": "1.0.0",
+  "description": "create a simple server in you PC",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "node-server": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Creemli/nodeServer.git"
+  },
+  "keywords": [
+    "node",
+    "server",
+    "http"
+  ],
+  "author": "creem",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Creemli/nodeServer/issues"
+  },
+  "homepage": "https://github.com/Creemli/nodeServer#readme",
+  "dependencies": {
+    "ip": "^1.1.3"
+  }
+}
